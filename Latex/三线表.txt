@@ -1,0 +1,13 @@
+\begin{table}[H]
+\centering
+\caption{}
+\begin{tabular}{@{}cccccc@{}}
+\toprule[1.5pt]
+  	& 	 & 	 & 	 & 	  & 	  \\ 
+\midrule[1pt]
+	& 	 & 	 & 	 & 	 & 	  \\
+	& 	 & 	 &	 & 	 & 	  \\
+\bottomrule[1.5pt]
+\end{tabular}
+\label{}
+\end{table}

@@ -1,0 +1,8 @@
+一、自定义行高
+实现方式：在LaTeX表格中的\begin{table}和\begin{tabular}之间插入命令\renewcommand\arraystretch{1.5}，其中1.5这个数值是可以自定义的，数值越大，表格越高。
+
+二、自定义列宽
+实现方式(需要导入graphicx包：\usepackage{graphicx})：在LaTeX表格中的\begin{table}和\begin{tabular}之间插入命令\tabcolsep=0.35cm，其中0.35cm是一个自定义宽度。数值越大，表格越长。或插入\setlength{\tabcolsep}{5mm}
+
+三、大表格自适应页面宽度
+实现方式(需要导入graphicx包：\usepackage{graphicx})：使用\resizebox{1.0\linewidth}{!}命令包围tabular的内容，其中，1.0表示将表格的宽度设置为页面宽度(linewidth)；如果是0.8的话，那么表格的宽度将被设置为页面宽度的80%；类似的，数值越小，表格宽度越小；当然，也可以设置比1.0还大的数字，但那样的话就不够美观了，因为给人还会是一种表格越界的感觉。
